@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+.apropos-page {
+  min-height: 100vh;
+  background: #080808;
+  padding: 120px 3rem 5rem;
+  font-family: 'Inter', sans-serif;
+  color: #e8e6e1;
+}
+
+.apropos-header {
+  margin-bottom: 4rem;
+}
+
+.apropos-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(232,230,225,0.35);
+  margin-bottom: 0.8rem;
+}
+
+.apropos-titre {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: #e8e6e1;
+}
+
+.apropos-titre span {
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(232,230,225,0.85);
+}
+
+.apropos-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+}
+
+.bio-card {
+  display: flex;
+  gap: 1.2rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 1.8rem;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bio-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.bio-card:nth-child(1)::before {
+  background: linear-gradient(90deg, #4FC3F7, #0288D1);
+}
+
+.bio-card:nth-child(2)::before {
+  background: linear-gradient(90deg, #F06292, #E91E8C);
+}
+
+.bio-card:nth-child(3)::before {
+  background: linear-gradient(90deg, #81C784, #2E7D32);
+}
+
+.bio-card:hover {
+  border-color: #fffefcc4;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+
+.bio-icon {
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.bio-card h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fffefcc4;
+  margin-bottom: 0.6rem;
+}
+
+.bio-card p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #fffefcc4;
+  line-height: 1.7;
+}
+
+.side-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.side-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-num {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #e8e6e1;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(232,230,225,0.35);
+}
+
+.cv-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid rgba(232,230,225,0.2);
+  border-radius: 12px;
+  color: #e8e6e1;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.cv-btn:hover {
+  background: #e8e6e1;
+  color: #080808;
+  border-color: #e8e6e1;
+}
+
+@media (max-width: 768px) {
+  .apropos-page { padding: 100px 1.5rem 3rem; }
+  .apropos-grid { grid-template-columns: 1fr; }
+}
