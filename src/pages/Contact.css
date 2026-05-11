@@ -216,3 +216,35 @@
   color: #e8e6e1;
   border-color: rgba(255,255,255,0.25);
 }
+
+.contact-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.contact-qr-label {
+  font-size: 0.8rem;
+  color: rgba(232,230,225,0.4);
+  letter-spacing: 0.05em;
+}
+
+.contact-vcf-btn {
+  font-size: 0.78rem;
+  color: rgba(232,230,225,0.5);
+  text-decoration: none;
+  padding: 0.45rem 1.2rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  letter-spacing: 0.05em;
+}
+
+.contact-vcf-btn:hover {
+  color: #e8e6e1;
+  border-color: rgba(255,255,255,0.2);
+}

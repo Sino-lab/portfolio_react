@@ -1,0 +1,20 @@
+[
+  {
+    "id": "proj-001",
+    "title": "Dashboard Analytics",
+    "description": "Interface de visualisation de données pour un client e-commerce. Tableaux de bord interactifs avec graphiques en temps réel.",
+    "techs": ["React", "Chart.js", "CSS Modules"],
+    "type": "Stage",
+    "liveUrl": null,
+    "imageUrl": "/images/dashboard.png"
+  },
+  {
+    "id": "proj-002",
+    "title": "Maquette UI Portfolio",
+    "description": "Design de la maquette Figma du portfolio professionnel, incluant les composants, la charte graphique et le prototype interactif.",
+    "techs": ["Figma", "UI Design"],
+    "type": "Design",
+    "liveUrl": null,
+    "imageUrl": "/images/maquette.png"
+  }
+]

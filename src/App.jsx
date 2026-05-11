@@ -5,11 +5,14 @@ import Contact from './pages/Contact.jsx'
 import Projet from './pages/Projet.jsx'
 import Erreur from './pages/Erreur.jsx'
 import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
+      <ScrollToTop />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/projets" element={<Projet />} />
@@ -17,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Erreur />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

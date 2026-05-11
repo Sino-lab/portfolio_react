@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import QRCodeContact from '../components/QRCodeContact'
 import './Contact.css'
 
 export default function Contact() {
@@ -148,6 +149,14 @@ export default function Contact() {
           {loading ? 'Envoi en cours...' : 'Envoyer le message →'}
         </button>
       </form>
+
+      <div className="contact-qr">
+        <QRCodeContact />
+        <p className="contact-qr-label">Scannez pour enregistrer mon contact</p>
+        <a href="/contact.vcf" download className="contact-vcf-btn">
+          Télécharger la vCard
+        </a>
+      </div>
     </div>
   )
 }
